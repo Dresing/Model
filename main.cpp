@@ -15,7 +15,10 @@ int main() {
 
     Model* A = new Model("TSP");
 
-    cout << (A->addVar());
+    (A->addVar("sdf"));
+
+
+    cout << A->getVar(1);
 
 
     return 0;

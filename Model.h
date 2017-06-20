@@ -7,8 +7,9 @@
 
 
 #include <vector>
+#include <array>
 #include "../Model/Variable.h"
-
+typedef list <tuple<long, Variable *>> ConstraintList;
 using namespace std;
 
 class Model{
@@ -20,8 +21,9 @@ private:
 public:
     Model(string name);
     ~Model();
-    Variable* addVar();
-
+    Variable* addVar(string name);
+    Variable *getVar(size_t location);
+    void Model::addConstraint(ConstraintList constraints, string oprand, long value);
 };
 
 

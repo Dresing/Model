@@ -4,11 +4,12 @@
 
 #ifndef HELLOWORLD_VARIABLE_H
 #define HELLOWORLD_VARIABLE_H
-
+#include <iostream>
+using namespace std;
 
 class Variable {
 public:
-    Variable();
+    Variable(string name);
 
 
 };
